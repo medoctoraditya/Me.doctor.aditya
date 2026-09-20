@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Me-adi | Dr. Aditya Missra</title>
+    <meta name="description"
+          content="Me-adi - Professional healthcare and doctor consultation website of Dr. Aditya Missra.">
+
+        <!-- Set this to the deployed Render service URL before deploying the frontend. -->
+        <meta name="api-base-url" content="http://localhost:5000">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header" id="header">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">✚</span>
+            <span>Me-<strong>adi</strong></span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#doctor">Doctor</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-chat-btn" onclick="openChatModal()">
+            Chat with Doctor
+        </button>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Healthcare • Care • Trust
+            </div>
+
+            <h1>
+                Your Health.
+                <span>Our Priority.</span>
+            </h1>
+
+            <p>
+                Welcome to <strong>Me-adi</strong>, your digital healthcare
+                platform with Dr. Aditya Missra. Get medical guidance,
+                appointment assistance and a simple way to connect with your doctor.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="openChatModal()">
+                    💬 Chat with Doctor
+                </button>
+
+                <a href="#appointment" class="secondary-btn">
+                    📅 Book Appointment
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div>
+                    <strong>24/7</strong>
+                    <span>Request Support</span>
+                </div>
+
+                <div>
+                    <strong>1:1</strong>
+                    <span>Doctor Connection</span>
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    <span>Patient Focused</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-doctor-card">
+
+            <div class="doctor-image-placeholder">
+                <div class="doctor-avatar">👨‍⚕️</div>
+
+                <span class="online-badge">
+                    <span></span> Available
+                </span>
+            </div>
+
+            <div class="doctor-card-info">
+                <p class="small-label">YOUR DOCTOR</p>
+
+                <h2>Dr. Aditya Missra</h2>
+
+                <p class="doctor-speciality">
+                    Medical Consultation
+                </p>
+
+                <div class="doctor-divider"></div>
+
+                <button onclick="openChatModal()" class="card-chat-btn">
+                    Start Consultation →
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EMERGENCY BAR ================= -->
+
+<section class="emergency-bar">
+
+    <div class="container emergency-inner">
+
+        <div class="emergency-icon">⚕</div>
+
+        <div>
+            <strong>Medical Emergency?</strong>
+            <p>
+                For serious or life-threatening emergencies, contact your
+                local emergency service immediately.
+            </p>
+        </div>
+
+        <a href="#contact" class="emergency-btn">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>ABOUT ME-ADI</span>
+            <h2>Healthcare made simple.</h2>
+            <p>
+                Me-adi is designed to make communication between patients
+                and healthcare professionals easier and more convenient.
+            </p>
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-card about-main-card">
+
+                <div class="about-icon">❤️</div>
+
+                <h3>Patient-Centered Care</h3>
+
+                <p>
+                    Our goal is to provide a comfortable digital experience
+                    where patients can share their concerns and request
+                    professional medical guidance.
+                </p>
+
+                <button class="text-btn" onclick="openChatModal()">
+                    Talk to Doctor →
+                </button>
+
+            </div>
+
+
+            <div class="about-features">
+
+                <div class="feature-card">
+                    <span>🔒</span>
+                    <div>
+                        <h3>Privacy Focused</h3>
+                        <p>Your personal information should be handled responsibly.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span>💬</span>
+                    <div>
+                        <h3>Easy Communication</h3>
+                        <p>Share your concern and request contact from the doctor.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span>📅</span>
+                    <div>
+                        <h3>Appointment Support</h3>
+                        <p>Send an appointment request without complicated steps.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>OUR SERVICES</span>
+            <h2>Healthcare support for you.</h2>
+            <p>
+                Select the service you need and send your request.
+            </p>
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">💬</div>
+
+                <h3>Chat with Doctor</h3>
+
+                <p>
+                    Share your health concern and request a consultation
+                    with Dr. Aditya Missra.
+                </p>
+
+                <button onclick="openChatModal()">
+                    Start Chat →
+                </button>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">📅</div>
+
+                <h3>Book Appointment</h3>
+
+                <p>
+                    Send an appointment request with your preferred date
+                    and basic details.
+                </p>
+
+                <a href="#appointment">
+                    Book Now →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">🩺</div>
+
+                <h3>Medical Consultation</h3>
+
+                <p>
+                    Discuss your concern with a healthcare professional
+                    through an appropriate consultation.
+                </p>
+
+                <button onclick="openChatModal()">
+                    Request Consultation →
+                </button>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">📋</div>
+
+                <h3>Follow-up Support</h3>
+
+                <p>
+                    Existing patients can use the contact request system
+                    for follow-up communication.
+                </p>
+
+                <button onclick="openChatModal()">
+                    Contact Doctor →
+                </button>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DOCTOR ================= -->
+
+<section class="section doctor-section" id="doctor">
+
+    <div class="container doctor-profile">
+
+        <div class="doctor-large-image">
+            <div class="large-avatar">👨‍⚕️</div>
+
+            <div class="floating-card">
+                <span>✓</span>
+                Patient-focused care
+            </div>
+        </div>
+
+
+        <div class="doctor-details">
+
+            <span class="section-label">MEET YOUR DOCTOR</span>
+
+            <h2>
+                Dr. Aditya Missra
+            </h2>
+
+            <p class="doctor-role">
+                Medical Consultant
+            </p>
+
+            <p>
+                Dr. Aditya Missra is the healthcare professional featured
+                on the Me-adi platform. Patients can use this website to
+                request consultation and contact.
+            </p>
+
+            <div class="doctor-info-grid">
+
+                <div>
+                    <span>Qualification</span>
+                    <strong>To be updated</strong>
+                </div>
+
+                <div>
+                    <span>Specialization</span>
+                    <strong>To be updated</strong>
+                </div>
+
+                <div>
+                    <span>Experience</span>
+                    <strong>To be updated</strong>
+                </div>
+
+                <div>
+                    <span>Consultation</span>
+                    <strong>By appointment</strong>
+                </div>
+
+            </div>
+
+            <button class="primary-btn" onclick="openChatModal()">
+                💬 Contact Dr. Aditya
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= APPOINTMENT ================= -->
+
+<section class="section appointment-section" id="appointment">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>APPOINTMENT</span>
+            <h2>Request an appointment.</h2>
+            <p>
+                Fill in your basic details and we will show you a confirmation.
+            </p>
+        </div>
+
+
+        <div class="appointment-wrapper">
+
+            <form id="appointmentForm" class="appointment-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input
+                            type="text"
+                            id="appointmentName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number *</label>
+                        <input
+                            type="tel"
+                            id="appointmentMobile"
+                            placeholder="10-digit mobile number"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input
+                            type="number"
+                            id="appointmentAge"
+                            placeholder="Your age"
+                            min="1"
+                            max="120"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input
+                            type="date"
+                            id="appointmentDate"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Reason for Appointment *</label>
+
+                    <textarea
+                        id="appointmentReason"
+                        rows="5"
+                        placeholder="Briefly describe your concern..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button class="primary-btn full-btn" type="submit">
+                    Send Appointment Request →
+                </button>
+
+                <p class="form-note">
+                    Please do not use this form for medical emergencies.
+                </p>
+
+            </form>
+
+
+            <div class="appointment-side">
+
+                <div class="appointment-side-icon">📅</div>
+
+                <h3>Need medical assistance?</h3>
+
+                <p>
+                    Send your request and the clinic/doctor can contact you
+                    using the information you provide.
+                </p>
+
+                <button onclick="openChatModal()" class="outline-btn">
+                    Chat Request
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="section reviews-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>PATIENT EXPERIENCE</span>
+            <h2>Care that puts patients first.</h2>
+            <p>
+                Sample review cards are included and should be replaced
+                with genuine patient feedback after obtaining appropriate permission.
+            </p>
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “The website made it easy for me to request a consultation.”
+                </p>
+                <strong>Sample Patient</strong>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “Simple, clean and easy to understand.”
+                </p>
+                <strong>Sample Patient</strong>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “The appointment request process was straightforward.”
+                </p>
+                <strong>Sample Patient</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section faq-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>FAQ</span>
+            <h2>Frequently asked questions.</h2>
+        </div>
+
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I contact the doctor?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Click “Chat with Doctor”, enter your details and
+                        submit your request. The doctor/clinic can then
+                        contact you using the information provided.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Is online consultation available?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Online consultation availability depends on the
+                        doctor's actual consultation process and schedule.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I use the website during an emergency?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        No. For serious or life-threatening symptoms,
+                        contact your local emergency service or visit
+                        the nearest emergency department immediately.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Will the doctor call me?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        After submitting a contact request, the doctor or
+                        clinic can contact you using the mobile number
+                        you provided.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-content">
+
+            <span class="section-label">CONTACT ME-ADI</span>
+
+            <h2>
+                We're here to help you connect.
+            </h2>
+
+            <p>
+                For appointments, consultation requests or general
+                information, use the options provided below.
+            </p>
+
+
+            <div class="contact-list">
+
+                <div class="contact-item">
+                    <span>📞</span>
+                    <div>
+                        <small>Phone</small>
+                        <strong>To be updated</strong>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>✉️</span>
+                    <div>
+                        <small>Email</small>
+                        <strong>To be updated</strong>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <small>Clinic Address</small>
+                        <strong>To be updated</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-card-icon">💬</div>
+
+            <h3>Have a health concern?</h3>
+
+            <p>
+                Send a consultation request to Dr. Aditya Missra.
+            </p>
+
+            <button
+                class="primary-btn full-btn"
+                onclick="openChatModal()"
+            >
+                Chat with Doctor
+            </button>
+
+            <p class="contact-note">
+                For emergencies, please use emergency medical services.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">✚</span>
+                <span>Me-<strong>adi</strong></span>
+            </a>
+
+            <p>
+                Digital healthcare connection with Dr. Aditya Missra.
+            </p>
+        </div>
+
+
+        <div>
+            <h4>Quick Links</h4>
+
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#doctor">Doctor</a>
+            <a href="#appointment">Appointment</a>
+        </div>
+
+
+        <div>
+            <h4>Patient</h4>
+
+            <a href="#" onclick="openChatModal(); return false;">
+                Chat with Doctor
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span> Me-adi. All rights reserved.
+        </p>
+
+        <p>
+            Designed for healthcare communication.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING CHAT ================= -->
+
+<button
+    class="floating-chat"
+    onclick="openChatModal()"
+    aria-label="Chat with Doctor"
+>
+    <span>💬</span>
+    <small>Chat with Doctor</small>
+</button>
+
+
+<!-- ================= CHAT MODAL ================= -->
+
+<div class="modal-overlay" id="chatModal">
+
+    <div class="chat-modal">
+
+        <button
+            class="modal-close"
+            onclick="closeChatModal()"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-header">
+
+            <div class="modal-doctor-icon">
+                👨‍⚕️
+            </div>
+
+            <div>
+                <span>CONSULTATION REQUEST</span>
+                <h2>Chat with Dr. Aditya</h2>
+            </div>
+
+        </div>
+
+
+        <div class="modal-notice">
+            🔒 Please provide accurate information so the doctor/clinic
+            can contact you appropriately.
+        </div>
+
+
+        <form id="chatForm">
+
+            <div class="form-group">
+
+                <label>Patient Name *</label>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    placeholder="Enter full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Mobile Number *</label>
+
+                    <input
+                        type="tel"
+                        id="patientMobile"
+                        placeholder="10-digit number"
+                        maxlength="10"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Age *</label>
+
+                    <input
+                        type="number"
+                        id="patientAge"
+                        placeholder="Age"
+                        min="1"
+                        max="120"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <select id="patientGender">
+
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer not to say">
+                            Prefer not to say
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>City</label>
+
+                    <input
+                        type="text"
+                        id="patientCity"
+                        placeholder="Your city"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Your Concern / Symptoms *</label>
+
+                <textarea
+                    id="patientProblem"
+                    rows="4"
+                    placeholder="Briefly describe your concern..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Preferred Contact</label>
+
+                <select id="contactMethod">
+
+                    <option value="Phone Call">Phone Call</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Other">Other</option>
+
+                </select>
+
+            </div>
+
+
+            <label class="consent-box">
+
+                <input
+                    type="checkbox"
+                    id="patientConsent"
+                    required
+                >
+
+                <span>
+                    I agree to share the above information for the purpose
+                    of responding to my consultation request.
+                </span>
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="primary-btn full-btn"
+            >
+                Send Request →
+            </button>
+
+
+            <p class="modal-small-note">
+                This form is not intended for emergency medical care.
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SUCCESS MODAL ================= -->
+
+<div class="modal-overlay" id="successModal">
+
+    <div class="success-modal">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>Request Received!</h2>
+
+        <p>
+            Thank you, <strong id="successPatientName"></strong>.
+        </p>
+
+        <p>
+            Your consultation request has been recorded.
+            Dr. Aditya Missra / clinic team can contact you soon
+            using the details you provided.
+        </p>
+
+        <div class="request-number">
+            Request ID:
+            <strong id="requestId"></strong>
+        </div>
+
+        <button
+            class="primary-btn full-btn"
+            onclick="closeSuccessModal()"
+        >
+            Done
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
