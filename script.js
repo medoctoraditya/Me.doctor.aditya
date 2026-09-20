@@ -253,16 +253,24 @@ const API_BASE_URL =
 
 async function submitConsultation(payload) {
 
-    const response = await fetch(
-        `${API_BASE_URL}/api/consultation`,
-        {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(payload)
-        }
-    );
+    let response;
+
+    try {
+        response = await fetch(
+            `${API_BASE_URL}/api/consultation`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            }
+        );
+    } catch (error) {
+        throw new Error(
+            "Unable to connect to the consultation service. Please try again or contact the doctor directly."
+        );
+    }
 
     const result = await response.json().catch(() => ({}));
 
